@@ -1,0 +1,55 @@
+﻿ body {
+            padding:0px;
+            margin:0px;
+            background-color:gainsboro;
+        }
+
+    .box1{
+            text-align:center;
+            width:100%;
+           
+        }
+    .box2{
+        text-align:left;
+        margin:0px auto;
+        width:640px;
+        height:768px;
+     }
+        .toolButton {
+            height:50px;
+            width:50px;
+            font-size:30px;
+            font-weight:bold;
+            font-family:Cambria;
+        }
+        .toolDropDown {
+            font-size:30px;
+        }
+        #titleArea {
+            font-size: 30px;
+            font-weight:bold;
+            margin-top:20px;
+            border-style:solid;
+            border-color:gray;
+            border-width:1px;
+        }
+        #editArea {
+            background-color:white;
+            height:680px;
+            width: 640px;
+            border-style:groove;
+            border-color:gray;
+            border-width:1px;
+            font-size: 20px;
+        }
+
+#insertPicBase {
+    position:absolute;
+    visibility:hidden;
+    background-color:darkblue; 
+    top:20px; 
+    width:430px;
+    height:50px;
+    padding:10px;
+    left: calc((100%/2) - 215);
+}

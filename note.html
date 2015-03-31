@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+     
+    </style>
+    <link href="css/richText.css" rel="stylesheet" />
+    <script src="js/editors.js"></script>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <div id="titleArea" contenteditable="true"></div>
+            <div id="toolBat" style="padding:0px">
+                <button id="saveButton" class="toolButton">S</button>
+                <select id="fontNameSelecter" class="toolDropDown">
+                    <option value="ＭＳゴシック">ＭＳゴシック</option>
+                    <option value="ＭＳ明朝">ＭＳ明朝</option>
+                    <option value="メイリオ">メイリオ</option>
+                    <option value="游ゴシック">游ゴシック</option>
+                    <option value="游明朝">游明朝</option>
+                    <option value="ＭＳ Ｐゴシック">ＭＳ Ｐゴシック</option>
+                    <option value="ＭＳ Ｐ明朝">ＭＳ Ｐ明朝</option>
+                </select>
+                <select id="fontSizeSelecter" class="toolDropDown">
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="20" selected>20</option>
+                    <option value="22">22</option>
+                    <option value="24">24</option>
+                </select>
+                <select id="fontColorSelecter" class="toolDropDown">
+                    <option value="#2980b9" style="color:black">■</option>
+                    <option value="gray" style="color:gray">■</option>
+                    <option value="blue" style="color:blue">■</option>
+                    <option value="red" style="color:red">■</option>
+                    <option value="yellow" style="color:yellow">■</option>
+                    <option value="green" style="color:green">■</option>
+                    <option value="violet" style="color:violet">■</option>
+                </select>
+                <button id="boldButton" class="toolButton">B</button><button id="underLineButton" class="toolButton" style="text-decoration:underline">U</button><button id="ialicBotton" class="toolButton" style="font-style:italic">I</button>
+                <button id="showPicbaseButton" class="toolButton">P</button><button id="showUrlbaseButton" class="toolButton">w</button>
+            </div>
+            <div id="editArea" contenteditable="true"><div></div></div>
+        </div>
+    </div>
+
+    <div id="insertPicBase" >
+        <div style="color:white">画像の挿入</div>
+        <input id="imageUrlText" type="url"
+               value="https://pbs.twimg.com/profile_images/1185446104/osamum_normal.jpg"
+               style="width:350px;" />
+        <button id="isertImageButton">作成</button>
+    </div>
+
+    <div id="insertUrlBase" style="position:absolute;visibility:hidden;background-color:darkblue; top:20px; margin-right:0px;width:450px;height:50px;padding:10px; margin: 0 auto;">
+        <div style="color:white">URLの挿入</div>
+        <input id="urlText"
+               type="url"
+               value="http://blogs.msdn.com/b/osamum/"
+               style="width:350px;" />
+        <button id="mkLinkButton">作成</button>
+    </div>
+</body>
+
+</html>
